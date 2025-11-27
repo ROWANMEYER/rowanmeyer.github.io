@@ -1,78 +1,65 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Additional custom styling for Rowan Meyer Portfolio */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #f7f7f7;
-    color: #333;
-    padding: 0 20px;
+/* Hero section enhancements */
+.hero-title {
+  letter-spacing: 1px;
 }
 
-/* Header */
-header {
-    text-align: center;
-    padding: 40px 0;
+.hero-subtitle {
+  opacity: 0.9;
 }
 
-header h1 {
-    font-size: 2.5rem;
+/* Project card enhancements */
+.card-hover {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-header p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Sections */
-section {
-    margin: 40px 0;
-}
-
-h2 {
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    color: #222;
-}
-
-/* Projects */
-.project {
-    background: white;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
-}
-
-.project img {
-    width: 100%;
-    margin: 10px 0;
-    border-radius: 6px;
+.card-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* Buttons */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #0073e6;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    margin-top: 10px;
+.btn-primary {
+  background-color: #14b8a6;
+  color: #0f172a;
+  padding: 0.6rem 1.3rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.25s ease;
 }
 
-.btn:hover {
-    background: #005bb5;
+.btn-primary:hover {
+  background-color: #2dd4bf;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    color: #777;
+  opacity: 0.7;
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
 }
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delay utility classes */
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.45s; }
