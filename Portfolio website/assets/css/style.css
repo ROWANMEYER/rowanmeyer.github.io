@@ -1,3 +1,0 @@
-.hero-bg{background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 50%,#0ea5e9 100%);}
-.card-hover{transition:transform .28s ease,box-shadow .28s ease}
-.card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(2,6,23,.6)}
