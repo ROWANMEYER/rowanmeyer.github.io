@@ -1,65 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rowan Meyer | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rowan Meyer | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hero-bg {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0ea5e9 100%);
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+  </style>
 </head>
+<body class="bg-slate-900 text-slate-100">
 
-<body>
+  <!-- HERO SECTION -->
+  <section class="hero-bg text-white py-28 px-6 text-center">
+    <h1 class="text-5xl font-extrabold mb-4">Rowan Meyer</h1>
+    <p class="text-lg opacity-90">Logistics Coordinator • Excel Automation • Python Developer</p>
+    <a href="#projects" class="mt-8 inline-block bg-white text-slate-900 font-medium py-3 px-6 rounded-lg shadow-lg hover:bg-slate-200">View My Projects</a>
+  </section>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Rowan Meyer</h1>
-        <p>Logistics Coordinator | Excel Automation | Beginner Python Developer</p>
-    </header>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="max-w-4xl mx-auto mt-16 px-6">
+    <h2 class="text-3xl font-bold mb-4">About Me</h2>
+    <p class="text-slate-300 leading-relaxed">
+      I am a logistics coordinator from South Africa with strong experience in Excel automation,
+      fleet management systems, and building tools that optimise daily transport operations.
+      I am currently learning Python and using it to build practical workflow automation tools.
+    </p>
+  </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a logistics coordinator from South Africa with strong experience in Excel automation, 
-            fleet management systems, and building tools to optimise daily transport operations. 
-            I am currently learning Python and building practical apps to improve workflows.
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="max-w-5xl mx-auto mt-20 px-6">
+    <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- PROJECT 1 -->
+      <div class="bg-slate-800 p-5 rounded-xl card-hover">
+        <img src="assets/images/fuel_dashboard.png" alt="Fuel Dashboard" class="rounded-lg mb-4 h-48 w-full object-cover" />
+        <h3 class="text-xl font-semibold">Truck Fuel Consumption Dashboard</h3>
+        <p class="text-slate-400 mt-2">
+          An automated Excel dashboard for tracking fuel usage, KM/L, and monthly summaries.
         </p>
-    </section>
+        <a href="downloads/fuel_dashboard.xlsx" class="inline-block mt-4 bg-teal-500 text-slate-900 py-2 px-4 rounded-lg font-medium hover:bg-teal-400">Download</a>
+      </div>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <h2>Excel & Data Projects</h2>
+      <!-- PROJECT 2 -->
+      <div class="bg-slate-800 p-5 rounded-xl card-hover">
+        <img src="assets/images/dispatch_system.png" alt="Dispatch System" class="rounded-lg mb-4 h-48 w-full object-cover" />
+        <h3 class="text-xl font-semibold">Driver & Fleet Dispatch System</h3>
+        <p class="text-slate-400 mt-2">
+          A tool to select drivers, trucks, and trailers automatically, generating WhatsApp-ready messages.
+        </p>
+        <a href="downloads/dispatch_system.xlsx" class="inline-block mt-4 bg-teal-500 text-slate-900 py-2 px-4 rounded-lg font-medium hover:bg-teal-400">Download</a>
+      </div>
 
-        <!-- Example Project -->
-        <div class="project">
-            <h3>Truck Fuel Consumption Dashboard</h3>
-            <p>An automated Excel dashboard tracking fuel consumption, KM/L, and monthly summaries.</p>
-            
-            <!-- Add screenshots -->
-            <img src="images/fuel_dashboard.png" alt="Fuel Dashboard Screenshot">
+    </div>
+  </section>
 
-            <!-- Optional download link -->
-            <a href="downloads/fuel_dashboard.xlsx" class="btn" download>Download Project</a>
-        </div>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="max-w-4xl mx-auto mt-24 px-6 mb-20 text-center">
+    <h2 class="text-3xl font-bold mb-4">Contact</h2>
+    <p class="text-slate-300">Email:</p>
+    <p class="text-xl font-semibold mt-1">your-email@example.com</p>
+  </section>
 
-        <div class="project">
-            <h3>Driver & Fleet Dispatch System</h3>
-            <p>A tool built in Excel & Python to select drivers, trucks, trailers and auto-generate WhatsApp messages.</p>
-            <img src="images/dispatch_system.png" alt="Dispatch System Screenshot">
-            <a href="downloads/dispatch_system.xlsx" class="btn" download>Download Project</a>
-        </div>
-
-        <!-- You can add unlimited more projects -->
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <strong>your-email@example.com</strong></p>
-    </section>
-
-    <footer>
-        <p>© 2025 Rowan Meyer. All Rights Reserved.</p>
-    </footer>
+  <footer class="text-center text-slate-500 py-6 border-t border-slate-700">
+    © 2025 Rowan Meyer. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
