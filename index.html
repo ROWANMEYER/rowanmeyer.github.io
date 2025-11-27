@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rowan Meyer | Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-sans bg-slate-900 text-slate-100 antialiased">
+
+  <header class="backdrop-blur-md bg-slate-900/60 fixed w-full z-40">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-3">
+        <img src="assets/images/logo.svg" alt="logo" class="h-10 w-10 object-contain"/>
+        <span class="text-lg font-semibold">Rowan Meyer</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-slate-200">
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#projects" class="hover:text-white">Projects</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+        <a href="https://github.com/rowanmeyer" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-slate-800/70 px-3 py-1 rounded">GitHub</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="themeToggle" aria-label="Toggle theme" class="p-2 rounded-md bg-slate-800/60">🌙</button>
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md bg-slate-800/60">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-slate-900/95 border-t border-slate-800">
+      <div class="px-4 py-3 flex flex-col gap-3">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24">
+    <section class="hero-bg text-white py-28 px-6 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Rowan Meyer</h1>
+        <p class="text-lg opacity-90">Logistics Coordinator • Excel Automation • Python Developer</p>
+        <div class="mt-8 flex items-center justify-center gap-4">
+          <a href="#projects" class="inline-block bg-white text-slate-900 font-medium py-3 px-6 rounded-lg shadow-lg hover:bg-slate-200">View Projects</a>
+          <a href="/downloads/Rowan_Meyer_CV.pdf" class="inline-block border border-white/30 px-4 py-3 rounded-lg">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="max-w-4xl mx-auto mt-16 px-6 text-slate-200">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="leading-relaxed text-slate-300">
+        I am a logistics coordinator from South Africa with strong experience in Excel automation, fleet management systems, and building tools that optimise daily transport operations.
+      </p>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto mt-20 px-6">
+      <h2 class="text-3xl font-bold mb-8 text-center text-slate-100">Projects</h2>
+      <div id="projectsGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    </section>
+
+    <section id="contact" class="max-w-4xl mx-auto mt-24 px-6 mb-20 text-center text-slate-200">
+      <h2 class="text-3xl font-bold mb-4">Contact</h2>
+      <p class="text-slate-300">Email me at <a href="mailto:rowan@alrtpt.co.za" class="text-teal-300 hover:underline">rowan@alrtpt.co.za</a></p>
+    </section>
+  </main>
+
+  <footer class="text-center text-slate-500 py-6 border-t border-slate-700">
+    © 2025 Rowan Meyer. All Rights Reserved.
+  </footer>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
